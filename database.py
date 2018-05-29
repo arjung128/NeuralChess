@@ -19,7 +19,7 @@ import time
 # Piece information to help build the features
 pieces = {'r': 2, 'n': 2, 'b': 2, 'q': 1, 'k': 1, 'p': 8}
 pieceValues = {'r': 5, 'n': 3, 'b': 3, 'q': 9, 'k': 25, 'p': 1}
-rookMovement = [np.array([0, 1]), np.array([0, 1]), np.array([-1, 0]), np.array([0, -1])]
+rookMovement = [np.array([0, 1]), np.array([1, 0]), np.array([-1, 0]), np.array([0, -1])]
 bishopMovement = [np.array([1, 1]), np.array([-1, 1]), np.array([1, -1]), np.array([-1, -1])]
 sliding = {'r': rookMovement, 'b': bishopMovement, 'q': rookMovement + bishopMovement}
 
